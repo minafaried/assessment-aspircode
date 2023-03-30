@@ -1,0 +1,21 @@
+.list{
+}
+mat-list {
+    position: absolute;
+    
+    width: 100% ;
+    height: 85%;
+    overflow: auto;
+}
+
+mat-list-item:nth-child(n){
+    height: 120px;
+    margin-bottom: 1%;
+  }
+  
+.card-action{
+    position: sticky;
+    left: 80%;
+    top: 10%;
+
+}

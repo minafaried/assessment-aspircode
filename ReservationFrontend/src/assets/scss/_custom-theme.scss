@@ -1,0 +1,35 @@
+$stc-contrast-dark: rgba(black, 0.87);
+$stc-contrast-light: white;
+$stc-coral:#536dfe;
+$my-theme-palette: (
+  50: $stc-coral,
+  100: $stc-coral,
+  200: $stc-coral,
+  300: $stc-coral,
+  400: $stc-coral,
+  500: $stc-coral,
+  600: $stc-coral,
+  700: $stc-coral,
+  800: $stc-coral,
+  900: $stc-coral,
+  A100: #8c9eff,
+  A200: #536dfe,
+  A400: #3d5afe,
+  A700: #304ffe,
+  contrast: (
+    50: $stc-contrast-dark,
+    100: $stc-contrast-dark,
+    200: $stc-contrast-dark,
+    300: $stc-contrast-dark,
+    400: $stc-contrast-dark,
+    500: $stc-contrast-light,
+    600: $stc-contrast-light,
+    700: $stc-contrast-light,
+    800: $stc-contrast-light,
+    900: $stc-contrast-light,
+    A100: $stc-contrast-dark,
+    A200: $stc-contrast-light,
+    A400: $stc-contrast-light,
+    A700: $stc-contrast-light,
+  )
+);

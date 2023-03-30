@@ -1,0 +1,19 @@
+.form{
+
+}
+table{
+    width: 100%;
+}
+
+.inputText {
+  width: 100%;
+}
+button{
+  width: 100px;
+  height: 30px;
+  border: none;
+  background-color: white;
+}
+button:hover {
+  background-color:  rgb(185, 185, 185);
+}

@@ -1,0 +1,70 @@
+<h1 style="font-size: x-large; font-weight: bold;" mat-dialog-title>add Reservation</h1>
+<br>
+<br>
+<mat-dialog-content class="mat-typography">
+  <div class="form">
+    <table  >
+        <tr>
+            <td >
+                <label style=" text-align: center;font-size: large;">Reservation Name</label>
+            </td>
+        </tr>
+        <tr >
+            <td ColSpan=2>
+              <mat-form-field class="inputText">
+                <mat-label>Name</mat-label>
+                <input matInput [(ngModel)]="name" >
+              </mat-form-field>
+                
+            </td>
+        </tr>
+        <tr>
+            <td><label style="font-size: large;" >begin</label></td>
+            <td>
+                <label style="font-size: large;">end</label>
+            </td>
+        </tr>
+        <tr>
+            
+            <td>
+              <mat-form-field class="inputText" >
+                <mat-label color="white">Start Time</mat-label>
+                <input matInput [(ngModel)]="startTime" placeholder="dd/mm/yyyy hh:mm Am" style="width: 100%;" required pattern="(\d{2}|\d{1})\/(\d{2}|\d{1})\/\d{4} (\d{2}|\d{1}):(\d{2}|\d{1}) (Am|Pm)" >
+              </mat-form-field>
+              
+            </td>
+            <td>
+              <mat-form-field class="inputText">
+                <mat-label>End Time</mat-label>
+                <input matInput [(ngModel)]="endTime" placeholder="dd/mm/yyyy hh:mm Pm" style="width: 100%;" required pattern="(\d{2}|\d{1})\/(\d{2}|\d{1})\/\d{4} (\d{2}|\d{1}):(\d{2}|\d{1}) (Am|Pm)">
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            
+            <td colspan="2" align="center" >
+              <mat-form-field class="inputText">
+              <mat-label>Password</mat-label>
+              <input matInput [(ngModel)]="password" placeholder="if the booking time more than 2 Hours" style="width: 100%;">
+            </mat-form-field> </td>
+          </tr>
+          <tr>
+            
+            <td colspan="2" align="center" style="color: red;">{{message}} </td>
+          </tr>
+    </table>
+
+
+
+    
+    <table cellspacing="0" style="position: fixed;">
+      
+    </table>
+
+  </div>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close >Cancel</button>
+  <button  [matDialogClose] [disabled]="!isValed()" (click)="addReservation()" >Add</button>
+</mat-dialog-actions>
