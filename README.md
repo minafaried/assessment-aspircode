@@ -3,9 +3,9 @@
 # Frontend using angular 
 using angular material and axios
 
-![Alt text](/Images/Reservation4.PNG "add Reservation front end")
+![Alt text](/Images/Reservation4.PNG "add Reservation Frontend")
 
-![Alt text](/Images/Reservation5.PNG "get Reservation front end")
+![Alt text](/Images/Reservation5.PNG "get Reservation Frontend")
 
 # Backend using java Spring boot 
 using runTime database
